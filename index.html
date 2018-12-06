@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script language="javascript" type="text/javascript" src="bundle.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+  <form id="registerForm" action="javascript:register()">
+    <fieldset>
+      <legend>Register for a Party</legend>
+      <label for="firstname">First name:</label>
+      <input id="firstname" name="firstname" type="text" required autofocus>
+      <label for="lastname">Last name:</label>
+      <input id="lastname" name="lastname" type="text" required>
+      <label for="party">Party:</label>
+      <input id="party" name="party" type="text" required>
+      <input onclick="" name="submit" type="button" value="Register">
+      </div>
+    </fieldset>
+  </form>
+  <form id="newpartyForm" action="javascript:registerParty()">
+    <fieldset>
+      <legend>Throw a party</legend>
+      <label for="firstname">First name:</label>
+      <input id="firstname" name="firstname" type="text" required autofocus>
+      <label for="lastname">Last name:</label>
+      <input id="lastname" name="lastname" type="text" required>
+      <label for="party">Party:</label>
+      <input id="party" name="party" type="text" required>
+      <label for="location">Location:</label>
+      <input id="location" name="location" type="text" required>
+      <label for="date">Date:</label>
+      <input id="date" name="date" type="date" required>
+      <input name="submit" type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </form>
+  </form>
+  <form id="getGuests" action="javascript:getGuests()">
+    <fieldset>
+      <legend>Get Guests</legend>
+      <label for="party">Party:</label>
+      <input id="party" name="party" type="text" required>
+      <input name="submit" type="submit" value="Submit">
+      <textarea id='output' disabled></textarea>
+    </fieldset>
+  </form>
+  <form id="getPartyDetails" action="javascript:getParties()">
+    <fieldset>
+      <legend>Get PartyDetails</legend>
+      <label for="party">Party:</label>
+      <input id="party" name="party" type="text" required>
+      <input name="submit" type="submit" value="Submit">
+      <textarea id='output' disabled></textarea>
+    </fieldset>
+  </form>
+</body>
+
+</html>
